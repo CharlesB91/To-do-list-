@@ -19,20 +19,18 @@
     <h1><%= kindOfDay %></h1>
 
     <ul>
-        <li>Buy Coffee</li>
-        <Li>Put Fuel In Car</Li>
-        <li>Take dog a walk</li>
-        <li>
+      <li>Buy Coffee</li>
+      <Li>Put Fuel In Car</Li>
+      <li>Take dog a walk</li>
 
-        </li>
+      <% for (i = 0; i < newListItems.length; i++){ %>
+      <li><%= newListItems[i] %></li>
+      <% } %>
     </ul>
 
-
     <form action="/" method="POST">
-     <input type="text" name="newItem">
-     <button type="submit" name="button">add</button>
-    
-    
+      <input type="text" name="newItem" />
+      <button type="submit" name="button">add</button>
     </form>
 
     <!-- Optional JavaScript; choose one of the two! -->
